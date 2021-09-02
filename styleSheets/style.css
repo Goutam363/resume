@@ -1,0 +1,642 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    background-color: #f7f7f7;
+}
+#preLoader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #191f26 url('https://acegif.com/wp-content/uploads/loading-2.gif') no-repeat center;
+    z-index: 99999;
+}
+#lightBox{
+    height: 0;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+    opacity: 0.8;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+    z-index: 5;
+}
+#body-header{
+    height: 70vh;
+    background-image: url("../img/macbook_mouse.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    padding-top: 2vh;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.horizontal-list li a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.text-centre{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    padding-top: 2vh;
+    display: flex;
+}
+.nav-menu li a{
+    display: inline-block;
+    padding: 15px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    transition: color 1.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: lightgray;
+    border-bottom: 1px solid lightgray;
+}
+#my-name{
+    color: white;
+    font-size: 7em;
+    line-height: 90px;
+}
+#name-social-container{
+    margin-top: 20vh;
+}
+.social-icons li a i{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: lightgray;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px lightgray;
+}
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#my-image{
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    margin-top: -10vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 8px lightgray;
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#about p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+.section-heading{
+    width: auto;
+    font-weight: 400;
+    text-align: center;
+}
+.section-heading span{
+    font-size: 5rem;
+    color: #2857a4;
+}
+.skills-display{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skill-progress{
+    margin: 2rem;
+    height: 3rem;
+    width: 20rem;
+    background-color: lightgray;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.inner-progress100{
+    height: 100%;
+    width: 100%;
+    padding-top: 0.5rem;
+}
+.inner-progress95{
+    height: 100%;
+    width: 95%;
+    padding-top: 0.5rem;
+}
+.inner-progress90{
+    height: 100%;
+    width: 90%;
+    padding-top: 0.5rem;
+}
+.inner-progress85{
+    height: 100%;
+    width: 85%;
+    padding-top: 0.5rem;
+}
+.inner-progress80{
+    height: 100%;
+    width: 80%;
+    padding-top: 0.5rem;
+}
+.inner-progress75{
+    height: 100%;
+    width: 75%;
+    padding-top: 0.5rem;
+}
+.inner-progress70{
+    height: 100%;
+    width: 70%;
+    padding-top: 0.5rem;
+}
+.inner-progress65{
+    height: 100%;
+    width: 65%;
+    padding-top: 0.5rem;
+}
+.inner-progress60{
+    height: 100%;
+    width: 60%;
+    padding-top: 0.5rem;
+}
+.progress-nevy{
+    background-color: navy;
+}
+.progress-orange{
+    background-color: orangered;
+}
+.progress-purple{
+    background-color: rgb(143, 94, 207);
+}
+.progress-green{
+    background-color: rgb(6, 92, 66);
+}
+.progress-name{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+.timeline{
+    position: relative;
+    width: 75%;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    background-color: #ebfffb;
+    z-index: -1;
+}
+.timeline-box{
+    margin: 5%;
+    position: relative;
+    width: 40%;
+    min-height: 150px;
+    border-radius: 20px;
+    background-color: #ffecfb;
+}
+.timeline-box h3{
+    font-size: 2.2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 2px;
+}
+.timeline-box h4{
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 5px;
+    color: #2857a4;
+}
+.timeline-box h5{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 5px;
+    color: #c1c1c1;
+}
+.timeline-box p{
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.timeline-box:nth-child(2n){
+    left: 50%;
+}
+.timeline-box:nth-child(2n+1){
+    text-align: right;
+}
+.timeline-box:nth-child(2n+1):after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #c1c1c1;
+    top: 30%;
+    right: -13.5%;
+}
+.timeline-box:nth-child(2n):after{
+    position: absolute;
+    content: '';
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: #c1c1c1;
+    top: 30%;
+    left: -13%;
+}
+.timeline-divider{
+    position: absolute;
+    width: 0;
+    height: 60%;
+    border: 3px dashed #c1c1c1;
+    top: 15%;
+    left: 50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 40%;
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: #2857a4;
+}
+.timeline-box div img{
+    width: 90px;
+    height: 90px;
+}
+.timeline-box:nth-child(2n+1) div img{
+    position: absolute;
+    border-radius: 50%;
+    top: -12%;
+    left: 5%;
+}
+.timeline-box:nth-child(2n) div img{
+    position: absolute;
+    border-radius: 50%;
+    top: -12%;
+    left: 80%;
+}
+.open-menu{
+    font-size: 2rem;
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+}
+.close-menu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.open-menu i{
+    color: white;
+}
+.close-menu i{
+    font-size: 2rem;
+    color: white;
+}
+.portfolio-details h3{
+    font-size: 2rem;
+}
+.portfolio-details p{
+    font-size: 1.3rem;
+}
+.portfolio-image-container img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 30px;
+}
+.portfolio-image-container{
+    max-width: 20rem;
+    margin: 2rem;
+}
+.portfolio-image-container img:hover{
+    border: 2px solid blue;
+}
+#portfolio-container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact{
+    background-image: linear-gradient(to top right, navy, rgb(93, 0, 155));
+}
+#contact h2 span{
+    color: white;
+}
+.contact-form form div input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.contact-form form input{
+    background: none;
+    border: 2px solid white;
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.contact-form form>input:hover{
+    background-color: rgba(211, 211, 211,0.6);
+}
+.contact-form form div textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.contact-aside h3{
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+#copyright a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.contact-aside div{
+    margin-bottom: 2rem;
+}
+.contact-aside div h4{
+    margin: 5px;
+    font-size: 1.5rem;
+    color: white;
+}
+.contact-main{
+    display: flex;
+    flex-direction: row;
+}
+.contact-main>div{
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: gray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 30px;
+}
+.darkmode label input[type="checkbox"]{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+.darkmode label input[type="checkbox"]:checked ~ .check{
+    background: #fff;
+}
+.darkmode{
+    margin: 2rem;
+}
+.check::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background: #fff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.darkmode label input[type="checkbox"]:checked ~ .check:before{
+    transform: translateX(-50px);
+}
+.check::after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #092c3e;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+.darkmode label input[type="checkbox"]:checked ~ .check:after{
+    transform: translateX(0px);
+}
+.temp{
+    height: 0;
+    width: 0;
+    margin: 3rem;
+}
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg)
+}
+.invert{
+    filter: invert(1) hue-rotate(180deg)
+}
+
+@media screen and (max-width: 1600px){
+    .contact-main>div{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+@media screen and (max-width: 1250px){
+    .contact-main>div{
+        margin: 0%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .timeline{
+        width: 90%;
+    }
+    #my-name{
+        font-size: 5rem;
+    }
+    .social-icons li a i {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .timeline-box div img{
+        top: -8% !important;
+    }
+    nav ul{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    .close-menu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .open-menu{
+        display: block;
+    }
+    nav ul li a:hover{
+        background: none;
+    }
+    .timeline-box div img{
+        width: 70px;
+        height: 70px;
+    }
+    .temp{
+        display: none;
+    }
+    #my-image{
+        height: 15rem;
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .contact-form form div input{
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .contact-form form div textarea{
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .contact-form form input{
+        margin: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .contact-main{
+        flex-direction: column;
+    }
+    .contact-main>div{
+        margin:0;
+    }
+}
+@media screen and (max-width: 700px){
+    .timeline{
+        width: 100%;
+        background-color: #e8e8e8;
+    }
+    #my-name{
+        font-size: 4rem;
+    }
+    .social-icons li a i {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+        left: 12% !important;
+        width: 80%;
+    }
+    .timeline-box:nth-child(2n+1):after{
+        left: -17%;
+    }
+    .timeline-box:nth-child(2n):after{
+        left: -17%;
+    }
+    .timeline-box h5{
+        text-align: left;
+    }
+    .timeline-box h4{
+        text-align: left;
+    }
+    .timeline-box h3{
+        text-align: left;
+    }
+    .timeline-box p{
+        text-align: left;
+    }
+    .timeline-box div img{
+        top: -8% !important;
+    }
+    .timeline-box:nth-child(2n+1) div img{
+        left: 80%;
+    }
+    #about p{
+        font-size: 2rem;
+    }
+    .timeline-box div img{
+        width: 60px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 500px){
+    #my-name{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width: 378px){
+    #my-name{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 324px){
+    #my-name{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 273px){
+    #my-name{
+        font-size: 2em;
+    }
+}
