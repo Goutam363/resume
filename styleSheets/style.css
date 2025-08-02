@@ -142,7 +142,7 @@ section:nth-child(2n+1){
     color: #2857a4;
 }
 .skills-display{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -212,6 +212,16 @@ section:nth-child(2n+1){
 .progress-green{
     background-color: rgb(6, 92, 66);
 }
+.progress-brown{
+    background-color: brown;
+}
+.progress-teal{
+    background-color: teal;
+}
+.progress-turquoise{
+    background-color: turquoise;
+}
+
 .progress-name{
     color: white;
     font-size: 1.5rem;
